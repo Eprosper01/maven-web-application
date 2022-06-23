@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Welcome to Landmark Software Solutions, Virginia, USA Office.</h1>
-<h1 align="center">We are developing and supporting quality and Software come and check us out
+<h1 align="center">We are develop modern software with relative ease 
 	We offer  Training for DevOps with Linux and Cloud equipping IT Engineers for best performance.</h1>
 <hr>
 <br>
