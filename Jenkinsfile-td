@@ -1,0 +1,32 @@
+node {
+    def mvnHome = tool 'maven3.8.6'
+    stage('1Clone') { // Code from github
+        // Get some code from a GitHub repository
+        git 'https://github.com/Eprosper01/maven-web-application'
+    }
+    stage('2Build') {
+        // Run the maven build command
+    sh "${mvnHome}/bin/mvn clean install"
+    }
+    /*
+    stage('3Code coverage') {
+        // Run the maven build command
+    sh "${mvnHome}/bin/mvn sonar:sonar"
+    }
+    stage('4Upload artifactory') {
+        // Run the maven cmd to upload artifacts into nexus
+    sh "${mvnHome}/bin/mvn deploy"
+    }
+    stage('5Upload UAT sever') {
+    deploy adapters: [tomcat9(credentialsId: 'tomcat-credential', path: '', url: 'http://192.168.0.30:8080/')], contextPath: null, war: 'target/*war'
+    }
+    stage('6Approval'){
+    timeout(time:9, unit:'HOURS') {
+        input message: 'Application ready for deployment, Please review and approve'
+    }
+ }
+  stage('7Upload to App sever') {
+    deploy adapters: [tomcat9(credentialsId: 'tomcat-credential', path: '', url: 'http://192.168.0.30:8080/')], contextPath: null, war: 'target/*war'
+    } 
+    */
+}
