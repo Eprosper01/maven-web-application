@@ -96,7 +96,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://192.168.0.22:4000/repository/ebay-nt-snapshot//</url>
+	      <url>http://172.30.250.199:4000/repository/cibc/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
